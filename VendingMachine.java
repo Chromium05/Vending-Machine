@@ -44,7 +44,7 @@ public class VendingMachine {
             choice = input.nextInt();
 
             switch(choice) {
-                default:
+                default: // Menu Pembelian
                     choice--;
                     for (int i = choice; i < (choice+1); i++) {
                         if (item[i][0] == 0) {
@@ -85,7 +85,7 @@ public class VendingMachine {
                         }
                     }
                 break;
-                case 0:
+                case 0: // Menu Admin
                     System.out.println("\nTekan <0> untuk kembali ke menu utama.");
                     System.out.print("Masukkan password: ");
                     inPass = input.nextInt();
